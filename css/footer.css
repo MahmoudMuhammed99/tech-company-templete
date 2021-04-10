@@ -1,0 +1,42 @@
+  /************************3.9 footer*********************************************/
+  footer{
+    background-color:var(--black-color);
+    position: relative;
+  
+}
+footer .footer-logo img  {
+   height: 100%;
+   width: 15%;
+   margin-left: 20%;
+ 
+}
+footer .footer-links {
+    position: absolute;
+    top:20%;
+    left: 50%;
+}
+footer .footer-links a i{
+    padding: 40px;
+background-color: var(--main-color); 
+color: var(--white-color);
+
+
+}
+footer .footer-links a:hover i{
+   color:var(--main-color) ;
+   background-color: var(--white-color);
+   border-radius: 50%;
+   transition: 0.5s;
+}
+
+
+footer .copy{
+    position: absolute;
+   left: 60%;
+   top: 85%;
+   color:var(--white-color);
+}
+footer .copy span{
+    color: var(--main-color);
+}
+/***************************footer end *******************/

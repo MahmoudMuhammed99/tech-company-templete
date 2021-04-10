@@ -1,0 +1,85 @@
+/****************************** 3.0-header **************************/
+
+header{
+    position: fixed; /* fixed and abslote convert elemnt from block to inline block to solve thise but width 100%*/
+    z-index: 5;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+.blog-header{
+    height: 80px;
+}
+header .logo {
+    flex-basis: 40%;
+   
+}
+header .logo img
+{
+    width: 100px ;
+    height: 100px;
+}
+header nav{
+    flex-basis: 60%;
+text-align: right;
+}
+
+nav ul li  {
+    display: inline;
+}
+
+nav >ul > li> a{
+   
+    color: white;
+        padding: 42px 15px ;
+    display: inline-flex;
+    font-size: 15px;
+    position: relative;
+    
+   
+}
+nav >ul> li> a.active::after{
+    content: "";
+    position: absolute;
+    width:55%;
+    height: 3px;
+    top:  65px;
+    background-color:var(--main-color);
+}
+nav >ul >li >a::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 3px;
+    top:  65px;
+    background-color:var(--main-color);
+}
+nav >ul >li> a:hover::after{
+    width:55%;
+    transition: .5s;
+}
+.drop{
+position: relative;
+}
+.drop-menu{
+    position: absolute;
+    background-color: var(--main-color);
+    width: 130px;
+    text-align: center;
+    left: -30%;
+    top:30px;
+    opacity: 0;
+    visibility: hidden;
+}
+.drop-menu a{
+    
+    color: var(--white-color);
+display: block;
+}
+.drop:hover .drop-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: .7s;
+}
+/**********************************end header ********************************/
+

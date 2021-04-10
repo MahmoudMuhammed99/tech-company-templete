@@ -1,0 +1,31 @@
+/*  ************************** 3.2 about section  **********************************/
+
+.about-item-title{
+    color: var(--black-color);
+    font-size: 2rem;
+   
+}
+.about-items:hover .about-item-title{
+  color: var(--white-color);
+}
+.about-item-desc{
+    line-height: 25px;
+ 
+    color: #999;
+}
+.about-items{
+  width: 30%;
+
+}
+.about-items img{
+    width: 100px;
+    height: 100px;
+}
+.about-items.marg{
+    margin:0 5% ;
+    border: 1px solid var(--bg2-color);
+    padding: 20px 10px ;
+  border-radius: 20%;
+}
+
+/**************** end about section ************************/

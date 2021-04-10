@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c36afd10a7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    
     <title>blog</title>
+
+    <meta charset="UTF-8">
+    <!-- font family link  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <!-- fontawesome link  -->
+    <script src="https://kit.fontawesome.com/c36afd10a7.js" crossorigin="anonymous"></script>
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilits.css">
+    <link rel="stylesheet" href="css/blog-page.css">
+    <link rel="stylesheet" href="css/blog-page-2.css">
+
+
+
+    
 </head>
 <body>
     <!-- *******************hedear section ************************ -->
-    <header class="blog-header">
-        <div class="container">
+    <header>
+        <div class="container display-flex marg-auto">
            
             <div class="logo">
                 <img src="images/logo.png" draggable="false">
@@ -28,7 +38,7 @@
                   <li class="drop">
                       <a href="#"> Blog </a>
                           <ul class="drop-menu">
-                              <li><a href="blog.html">Blog post </a></li>
+                              <li><a href="blog.html" class="padding-10px">Blog post </a></li>
                           </ul>
                     </li>
                  
@@ -42,25 +52,25 @@
     </header> 
 
     <!-- ****************** breadcramb section********************* -->
-    <section class="bread-crumbs">
-        <div class="container">
+    <section class="bread-crumbs display-flex">
+        <div class="container display-flex marg-auto">
         <div class="blog-title">
             <h2>blog page</h2>
         </div>
             <div class="bread-list">
-                <ul>
-                    <li>home</li>
-                    <li class="now">blog</li>
-                    <li>single post</li>
+                <ul class="display-inline-flex">
+                    <li class="padding-10px">home</li>
+                    <li class="now padding-10px">blog</li>
+                    <li class="padding-10px">single post</li>
                 </ul>
             </div>
         </div>
     </section>
     <!-- *****************  blog main  **************************** -->
-    <section class="blog-content pdy">
+    <section class="blog-content pdy display-flex">
         <div class="big-left">
             <img src="images/blog/blog1.webp" alt="office"> <br>
-            <ul class="notific">
+            <ul class="notific display-inline-flex">
                 <li> <i class="fa fa-user"></i> jone </li>
                 <li><i class="fa fa-clock-o"></i>20 arrival</li>
                 <li> <i class="fa fa-comments"></i>30</li>
@@ -71,10 +81,10 @@
                  dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
                 Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
             </p>
-            <div class="tags-content">
+            <div class="tags-content  display-inline-flex ">
             <h3>Tags :</h3>
             
-            <ul class="tags">
+            <ul class="tags display-inline-flex ">
                 <li class="tag-item-li"> <i class="fa fa-user"></i>  web </li>
                 <li class="tag-item-li"> <i class="fa fa-user"></i> design</li>
                 <li class="tag-item-li"> <i class="fa fa-user"></i> marketing</li>
@@ -83,12 +93,12 @@
                 <li class="tag-item-li"> <i class="fa fa-user"></i> photography</li>
            </ul>
         </div>
-           <div class="person">
+           <div class="person display-inline-flex">
             <img src="images/team/team1.webp" alt="person"> 
             <div class="flex-info">
             <div class="person-info">
            <div class="name"> <h3>JOE DOE</3></div>
-            <ul class="peron-links">
+            <ul class="peron-links display-inline-flex">
                 <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
@@ -96,7 +106,7 @@
             </ul>
         </div>
         <hr/>
-        <div class="person-dec">
+        <div class="person-dec marg-b-30">
             <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. 
              non blandit massa enim nec purus in mollis nunc sed.</p>
            </div>
@@ -106,7 +116,7 @@
         <div class="big-right">
             <input class="search-parent" type="search" placeholder="search">
             <i class="fa fa-search search-child"></i>
-            <div class="right-header">
+            <div class="right-header marg-b-30">
 
             <h3 class="about-header"> CATEGORY </h3>
             <span class="line"></span>
@@ -141,29 +151,29 @@
              </div>
             <div class="post">
                 
-                <div class="pos-content">
+                <div class="pos-content marg-top-12px">
                     <img src="images/blog/blog1.webp" alt="office">
                     <div class="pup-post">
 
-                    <a href="#">Blog title goes here</a>
-                    <span class="history"> Oct 18, 2017</span>
+                    <a href="#" class="marg-top-12px">Blog title goes here</a>
+                    <span class="history capitalize"> Oct 18, 2017</span>
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="pos-content">
+                <div class="pos-content marg-top-12px">
                     <img src="images/blog/blog2.webp" alt="office">
                     <div class="pup-post">
-                    <a href="#">Blog title goes here</a>
+                    <a href="#" class="marg-top-12px">Blog title goes here</a>
                     <span class="history">Oct 18, 2017</span>
                 </div>
             </div>
                 <div class="clear"></div>
 
-                <div class="pos-content">
+                <div class="pos-content marg-top-12px">
                     <img src="images/blog/blog3.webp" alt="office">
                     <div class="pup-post">
 
-                    <a href="#">Blog title goes here</a>
+                    <a href="#" class="marg-top-12px">Blog title goes here</a>
                     <span class="history">Oct 18, 2017</span>
                     </div>
                 </div>
@@ -188,7 +198,7 @@
 <!-- *********************leave a reply section ********************* -->
     <section class="reply pdy">
 <div class="rebly-header">
-    <h3 class="rebly-title"> Leave a Rebly </h3>
+    <h3 class="rebly-title marg-b-5" > Leave a Rebly </h3>
     <span class="line"></span>
      </div>
   <form action="" class="reply-form">
@@ -196,24 +206,24 @@
          <input class="box" type="email" name="name" id="email" placeholder="email"><br>
 
          <textarea  class="text" name="ciiment" id="" cols="30" rows="10" placeholder="type a acomment"> </textarea><br>
-         <input type="submit" class="submit">
+         <input type="submit" class="submit capitalize">
         </form>
      
     </section>
     <!-- **********************footer ******************************** -->
-    <footer>
-       <div class="footer-logo">
-           <img src="images/logo.png" alt="logo" >
-       </div>
-      
-        <ul class="footer-links">
-            <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
-        </ul>
-      <p class="copy">all copyright &COPY; 2021 reserved to <span>mahmoud muhammed </span>  </p>
-   </footer>
+    <footer class="display-flex">
+        <div class="footer-logo ">
+            <img src="images/logo.png" alt="logo" >
+        </div>
+       
+         <ul class="footer-links display-inline-flex ">
+             <li><a href="#" class="padding-10px"><i class="fa fa-facebook fa-2x border-radius-20-px"></i></a></li>
+             <li><a href="#" class="padding-10px"><i class="fa fa-twitter fa-2x border-radius-20-px"></i></a></li>
+             <li><a href="#" class="padding-10px"><i class="fa fa-youtube fa-2x border-radius-20-px"></i></a></li>
+             <li><a href="#" class="padding-10px"><i class="fa fa-linkedin fa-2x border-radius-20-px"></i></a></li>
+             <li><a href="#" class="padding-10px"><i class="fa fa-google-plus fa-2x border-radius-20-px"></i></a></li>
+         </ul>
+       <p class="copy">all copyright &COPY; 2021 reserved to <span class="capitalize">mahmoud muhammed </span>  </p>
+    </footer>
 </body>
 </html>

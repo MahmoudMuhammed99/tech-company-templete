@@ -1,0 +1,41 @@
+ /***************news section ************************************************/
+ .news{
+  
+    background-color: var(--f9-bg-color);
+
+    }
+   
+    .news-item img{
+        width: 100%;
+    }
+    .news-item.marg{
+ margin: 0 20px 0 20px;
+    }
+    .news-head {
+        margin-bottom: 50px;
+    }
+    .news-item{
+        border: 1px solid var(--bg2-color);
+        padding: 30px;
+
+    }
+    
+    .news-item ul li i{
+        color: cornflowerblue;
+
+    }
+    .news-content{
+        font-size: 1rem;
+        color: var(--black-color);
+        line-height: 1.3rem;
+       
+    }
+
+    .news-item span{
+        color: cornflowerblue;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+
+    /**************end news section **************************************/
