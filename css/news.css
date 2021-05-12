@@ -1,22 +1,17 @@
  /***************news section ************************************************/
- .news{
-  
-    background-color: var(--f9-bg-color);
 
-    }
    
     .news-item img{
         width: 100%;
     }
-    .news-item.marg{
- margin: 0 20px 0 20px;
-    }
+   
     .news-head {
-        margin-bottom: 50px;
+        margin-bottom: 3.5rem;
     }
     .news-item{
-        border: 1px solid var(--bg2-color);
+        
         padding: 30px;
+        box-shadow: 2px 4px 2px 3px #e8e8e8;
 
     }
     

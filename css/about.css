@@ -2,7 +2,7 @@
 
 .about-item-title{
     color: var(--black-color);
-    font-size: 2rem;
+    font-size: 1.7rem;
    
 }
 .about-items:hover .about-item-title{
@@ -13,19 +13,21 @@
  
     color: #999;
 }
-.about-items{
-  width: 30%;
 
-}
 .about-items img{
     width: 100px;
     height: 100px;
 }
 .about-items.marg{
-    margin:0 5% ;
+   
     border: 1px solid var(--bg2-color);
-    padding: 20px 10px ;
+    padding: 1.2rem 0.6rem ;
   border-radius: 20%;
 }
 
 /**************** end about section ************************/
+/*=========================================
+    caption media query
+ ==========================================
+ */
+/* // Small devices (landscape phones, 576px and up) */

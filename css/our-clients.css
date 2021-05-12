@@ -4,13 +4,11 @@
   }
   .our-clients{
       background-color: rgb(4, 28, 52);
-      margin-top: 100px;
+      margin-top: 7rem;
      
   }
   .clients .client-item{
-    margin: 40px 0 0 30px;
-    width: 200px;
-    height: 200px;
+    margin-top: 3rem;
     transform: scale(1);
     transition: 0.5s ease-in-out;
 
@@ -18,9 +16,10 @@
   .clients .client-item img{
       border-radius: 40px;
       cursor: pointer;
+      width: 80%;
   }
   .clients .client-item:hover img{
 
-    transform: scale(1.2);
+    transform: scale(1.1);
 
   }

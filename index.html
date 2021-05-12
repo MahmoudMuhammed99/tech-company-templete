@@ -14,16 +14,19 @@
     3.9 footer -->
     <meta charset="UTF-8">
     <!-- font family link  -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
 
         <!-- fontawesome link  -->
     <script src="https://kit.fontawesome.com/c36afd10a7.js" crossorigin="anonymous"></script>
 
-    <!-- css files -->
+    <!--  bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!-- css files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilits.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/features.css">
     <link rel="stylesheet" href="css/our-clients.css">
@@ -43,107 +46,169 @@
     <!-- ************************start header section****************************-->
 
     <header>
-        <div class="container display-flex marg-auto">
-           
-            <div class="logo">
-                <img src="images/logo.png" draggable="false">
-            </div>
-            <nav>
-              <ul>
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li class="drop">
-                      <a href="#"> Blog </a>
-                          <ul class="drop-menu">
-                              <li><a href="blog.html" class="padding-10px">Blog post </a></li>
-                          </ul>
+  
+        <nav id="#navbar-example2" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <div class="container">
+                
+            <a  class="navbar-brand " href="index.html">
+                <img src="images/logo-wihte.png" alt="page-logo" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collape-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+            <div class="collapse navbar-collapse dropdown d-md-flex justify-content-md-end" id="collape-nav">
+                <ul class="navbar-nav ">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link active">Home</a>
                     </li>
-                 
-                 
-
-
-              </ul>
-
+                  
+                    <li class="navbar-item">
+                        <a href="#feat" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#serv" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#about" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                          <li><a class="dropdown-item" href="#">careers</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">salaries</a></li>
+                        </ul>
+                      </li>
+                    <li class="navbar-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
             </nav>
-        </div>
-    </header> 
+    </div>
+</header>
     <!-- *******************************end header **********************************-->
 
-    <!-- ****************************start home section*****************************  -->
- <main>
-    <div class="overlay ">
-    <div class="home-content">
-        <h1 class="title">
-        Software House you can count on
-        </h1>
-        <p class="descreption">
-           We fabricate vibrant websites and mobile apps with digital plans. Get your customers impressed and leap off the competition.
-        </p>
-        <button class="btn btn-start opacity border-radius-10-px padding-10px ">Get Started!</button>
-        <button class="btn btn-learn opacity border-radius-10-px padding-10px ">Learn More</button>
-    
-</div>
-    </div>
-</main>
-    <!--******************************* end home**********************************  -->
+    <!-- ****************************start slider section*****************************  -->
+    <section class="slider ">
+      
 
-    <!-- ***************************all start secetions*************************** -->
-
-        <!-- ************************start about section****************************-->
-    <section class="about pdy ">
-        <h1 class="about-header marg-b-15 uppercase"> our services </h1>
-        <span class="line"></span>
-    </section>   
-<!-- ****************************end about  section ********************************* -->
-
+        <div id="slide" class="carousel slide carousel-fade " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                
+              <div class="carousel-item  active " data-bs-interval="10000" >
+                <img src="images/background/slider3.jpg" class="d-block w-100" alt="slide-image">
+                <div class="carousel-caption ">
+                  <h5 class="mb-4"> Software House you can count on</h5>
+                  <p class="fs-5">We fabricate vibrant websites and mobile apps with digital plans. Get your customers impressed and leap off the competition.</p>
+                  <div class="grp d-flex gap-3 justify-content-center mt-5">
+                    <button class="btn-md-lg btn-light p-1 rounded">learn more</button>
+                    <button class="btn-md-lg btn-primary p-1  rounded">Get Started</button>
+                </div>
+                </div>
+              </div>
+              <div class="carousel-item " data-bs-interval="10000">
+                <img src="images/background/slider2.jpg" class="d-block w-100" alt="slide-image">
+                <div class="carousel-caption ">
+                    <h5 class="mb-4"> Software House you can count on</h5>
+                    <p class="fs-5">We fabricate vibrant websites and mobile apps with digital plans. Get your customers impressed and leap off the competition.</p>
+                    <div class="grp d-flex gap-3 justify-content-center mt-5">
+                        <button class="btn-md-lg btn-light p-1 rounded">learn more</button>
+                        <button class="btn-md-lg btn-primary p-1  rounded">Get Started</button>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="images/background/slide0.webp" class="d-block w-100" alt="slide-image">
+                <div class="carousel-caption ">
+                    <h5 class="mb-4"> Software House you can count on</h5>
+                    <p class="fs-5">We fabricate vibrant websites and mobile apps with digital plans. Get your customers impressed and leap off the competition.</p>
+                    <div class="grp d-flex gap-3 justify-content-center mt-5">
+                        <button class="btn-md-lg btn-light rounded">learn more</button>
+                        <button class="btn-md-lg btn-primary  rounded">Get Started</button>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+           
+          </div>
+        
+    </section>
+    <!--******************************* end slider**********************************  -->
 
 <!-- ************************start our servises section*************************-->
-<div class="container size marg-auto">
-    <section class="about-content display-flex">
-<div class="about-items marg ltr">
-    <img src="images/icons/icon1.png" alt="web icon">
-       <h3 class="about-item-title marg-b-5 uppercase ">web development</h2>
-    <p class="about-item-desc marg-b-5"> 
-It is not just a landing page, It is ART. We concentrate on making unique experiences fit your customers' needs to get them satisfied, so forget about the Bounce rate!
-    </p>
-    <a href="#">read more</a>
-</div>
-<div class="about-items marg ltr">
-    <img src="images/icons/icon2.svg" alt="marketing icon">
 
-       <h3 class="about-item-title">Digital Marketing</h2>
-    <p class="about-item-desc">
-        
-No more exaggerated budgets or random targets, we're working on well-studied digital plans for marketing content, products, services or anything you offer customers to make them fullfilled.
-    </p>
-    <a href="#">read more</a>
-</div>
-<div class="about-items marg ltr">
-    <img src="images/icons/icon3.svg" alt="Designing icon">
-       <h3 class="about-item-title">Branding and Designing</h2>
-    <p class="about-item-desc">
-        Stand out of the competition and make your customers differentiate you among thousands with your distinctive.</p>
-    <a href="#">read more</a>
-</div>
+    <section id="contact" class="about-content">
+        <div class="about py-5 my-3">
+            <h1 class="about-header m-b-5 uppercase "> our services </h1>
+            <span class="line"></span>
+        </div> 
+    <div class="container-lg container-fluid row m-auto justify-content-around gap-lg-4 flex-lg-nowrap">
+                <div class="about-items marg ltr col-lg-4  col-md-5 col-12 ">
+                    <img src="images/icons/icon1.png" alt="web icon">
+                    <h3 class="about-item-title marg-b-5 ">web development</h2>
+                    <p class="about-item-desc px-5 py-4 lh-3"> 
+                It is not just a landing page, It is ART. We concentrate on making unique experiences fit your customers'
+                 needs to get them satisfied, so forget about the Bounce rate!
+                    </p>
+                    <a href="#" >read more</a>
+                </div>
+                                <div class="about-items marg ltr gap-5 my-md-0 my-5   col-lg-4 col-md-5  col-12" >
+                                    <img src="images/icons/icon2.svg" alt="marketing icon">
+
+                                    <h3 class="about-item-title">Digital Marketing</h2>
+                                        <p class="about-item-desc px-5 py-4 lh-3">
+                                        
+                                No more exaggerated budgets or random targets, we're working on well-studied
+                                 digital plans for marketing content,
+                                 products, services or anything you offer customers to make them fullfilled.
+                                    </p>
+                                    <a href="#">read more</a>
+                                </div>
+                                                <div class="about-items marg ltr mt-lg-0 mt-3 col-lg-4 col-md-10 col-12">
+                                                    <img src="images/icons/icon3.svg" alt="Designing icon">
+                                                    <h3 class="about-item-title">Branding and Designing</h2>
+                                                        <p class="about-item-desc px-5 py-4 lh-3">
+                                                        Stand out of the competition and make your customers differentiate you among thousands with your distinctive.</p>
+                                                    <a href="#">read more</a>
+                                                </div>
+    </div>
     </section>
-</div>
+
  <!--*****************************end  our servises section*****************************-->
 
 <!-- ****************************start features section *********************************-->
-<section class="features pdy">
+<section  id="feat" class="features ">
     <div class="feat-head">
-        <h3 class="feat-title marg-b-5 capitalize">
+        <h3 class="feat-title m-b-2 text-capitalize">
             our featured work.
         </h3>
         <span class="line"></span>
     </div>
-    <div class="container2 marg-auto">
-        <div class="feat display-flex marg-auto">
-           <div class="feat-item padding-10px"> <img class="border-radius-50-px" src="images/work/Capture.png" alt="our work">
+    <div class="container-lg container-fluid  m-auto ">
+        <div class="feat row pt-5 justify-content-around">
+           <div class="feat-item p-3 col-md-6 col-12"> <img class="border-radius-50-px" src="images/work/Capture.png" alt="our work">
             <div class="layer-content border-radius-50-px">
                 <div class="layer-info">
                     <a class="border-radius-30-px display-inline-flex" href="#"> <i class="fa fa-edit fa-2x" ></i></a>
@@ -154,7 +219,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 
             </div>
         </div>
-           <div class="feat-item padding-10px">   <img src="images/work/f2.png"   class="border-radius-50-px"alt="our work">
+           <div class="feat-item feat-item p-3 col-md-6 col-12">   <img src="images/work/f2.png"   class="border-radius-50-px"alt="our work">
             <div class="layer-content border-radius-50-px">
                 <div class="layer-info">
                     <a class="border-radius-30-px display-inline-flex" href="#"> <i class="fa fa-edit fa-2x" ></i></a>
@@ -164,7 +229,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
                
             </div>
         </div>
-            <div class="feat-item padding-10px">   <img src="images/work/f3.png" class="border-radius-50-px" alt="our work">
+            <div class="feat-item feat-item p-3 col-md-6 col-12">   <img src="images/work/f3.png" class="border-radius-50-px" alt="our work">
                 <div class="layer-content border-radius-50-px">
                     <div class="layer-info">
                         <a class="border-radius-30-px display-inline-flex" href="#"> <i class="fa fa-edit fa-2x" ></i></a>
@@ -174,7 +239,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
                    
                 </div>
             </div>
-                <div class="feat-item padding-10px">   <img src="images/work/f4.png"   class="border-radius-50-px" alt="our work">
+                <div class="feat-item feat-item p-3 col-md-6 col-12">   <img src="images/work/f4.png"   class="border-radius-50-px" alt="our work">
                     <div class="layer-content border-radius-50-px">
                         <div class="layer-info">
                             <a class="border-radius-30-px display-inline-flex" href="#"> <i class="fa fa-edit fa-2x" ></i></a>
@@ -184,7 +249,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
                        
                     </div>
                 </div>
-                    <div class="feat-item padding-10px">  <img src="images/work/f5.png"  class="border-radius-50-px" alt="our work">
+                    <div class="feat-item feat-item p-3 col-md-6 col-12">  <img src="images/work/f5.png"  class="border-radius-50-px" alt="our work">
                          <div class="layer-content border-radius-50-px">
                             <div class="layer-info">
                                 <a class="border-radius-30-px display-inline-flex" href="#"> <i class="fa fa-edit fa-2x" ></i></a>
@@ -194,7 +259,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
                            
             </div>
                     </div>
-                        <div class="feat-item padding-10px">  <img src="images/work/f6.png"  class="border-radius-50-px" alt="our work">
+                        <div class="feat-item feat-item p-3 col-md-6 col-12">  <img src="images/work/f6.png"  class="border-radius-50-px" alt="our work">
                             <div class="layer-content border-radius-50-px">
                                 <div class="layer-info">
                                     <a class="border-radius-30-px display-inline-flex" href="#"> <i class="fa fa-edit fa-2x" ></i></a>
@@ -210,20 +275,20 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 <!-- ****************************end features section*********************************** -->
 
 <!-- *************************start our clients section ********************************* -->
-<section class="our-clients pdy">
+<section  class="our-clients py-5">
     <h1 class="clients-header marg-b-15 capitalize">
         our clients.
     </h1>
     <span class="line"></span>
 
-    <div class="container bgcolor marg-auto">
+    <div class="container-lg container-fluid bgcolor m-auto">
         
-        <div class="clients">
-           <div class="client-item display-inline-flex"> <img src="images/clients/c1.png" alt="our work"></div>
-            <div class="client-item display-inline-flex"> <img src="images/clients/c2.png" alt="our work"></div>
-                <div class="client-item display-inline-flex"> <img src="images/clients/c3.png" alt="our work"></div>
-                    <div class="client-item display-inline-flex"> <img src="images/clients/c4.png" alt="our work"></div>
-                        <div class="client-item display-inline-flex"> <img src="images/clients/c5.png" alt="our work"></div>
+        <div class="clients row justify-content-around">
+           <div class="client-item col-lg col-md-4 col-sm-6 col-12"> <img src="images/clients/c1.png" alt="our work"></div>
+            <div class="client-item col-lg col-md-4 col-sm-6 col-12"> <img src="images/clients/c2.png" alt="our work"></div>
+                <div class="client-item col-lg col-md-4 col-sm-6 col-12"> <img src="images/clients/c3.png" alt="our work"></div>
+                    <div class="client-item col-lg col-md-4 col-sm-6 col-12"> <img src="images/clients/c4.png" alt="our work"></div>
+                        <div class="client-item col-lg col-md-4 col-sm-6 col-12"> <img src="images/clients/c5.png" alt="our work"></div>
 
         </div>
       
@@ -234,62 +299,69 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 
 
 <!-- **************************start why choose us section******************************** -->
-<section class="choose-us pdy display-inline-flex">
-    <div class="left">
-    <div class="choose-head">
-        <h3 class="choose-title marg-b-5 capitalize">
-            why choose us.
-        </h3>
-        <span class="line"></span>
+<section   class="choose-us py-5">
+    <div class="container-lg container-fluid  m-auto">
+      <div class="row justify-content-around">
+      <div class="left col-lg-6 col-12">
+        <div class="choose-head">
+            <h3 class="choose-title marg-b-5 capitalize">
+                why choose us.
+            </h3>
+            <span class="line"></span>
+    
+            <p class="choos-desc">
+                At Webstdy, you are not our client, we're partners, with a new peak to seek a new online entity to build, a unique experience to offer, all with a goal front and center Your Success.
+            </p>
+            <div class="points">
+            <ul>
+                <li><i class="fas fa-check-circle"></i>standards.</li>
+                <li><i class="fas fa-check-circle"></i>Strategic Planning.</li>
+                <li><i class="fas fa-check-circle"></i>High Experience.</li>
+                <li><i class="fas fa-check-circle"></i>reativity And Innovation.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
 
-        <p class="choos-desc">
-            At Webstdy, you are not our client, we're partners, with a new peak to seek a new online entity to build, a unique experience to offer, all with a goal front and center Your Success.
-        </p>
-        <div class="points">
-        <ul>
-            <li><i class="fas fa-check-circle"></i>standards.</li>
-            <li><i class="fas fa-check-circle"></i>Strategic Planning.</li>
-            <li><i class="fas fa-check-circle"></i>High Experience.</li>
-            <li><i class="fas fa-check-circle"></i>reativity And Innovation.</li>
-        </ul>
-    </div>
-    </div>
+    <div class="right  col-lg-6 col-12 pt-5">
+      <img src="images/work/we.png" alt="team photo">
+      <ul class="bull display-inline-flex">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+         
+      </ul>
+  </div>
 </div>
-<div class="right">
-    <img src="images/work/we.png" alt="team photo">
-    <ul class="bull display-inline-flex">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-       
-    </ul>
-</div>
+    </div>
+  
+
 </section>
 <!-- **************************end  why choose us section********************************* -->
 
 <!-- ***************************start achievement section ********************************-->
-<section class="goals">
-    <div class="goal-container ">
-        <div class="overlay display-flex">
+<section  class="goals">
+    <div class="goal-container">
+        <div class="overlay d-flex flex-wrap align-items-center">
 
-        <div class="goal-item marg-auto">
-            <i class="icon fa fa-users fa-2x"></i>
-            <h3 class="number-item-title">451</h3>
+        <div class="goal-item col-md col-sm-6 col-6">
+            <i class="icon fa fa-users fa-2x" aria-hidden="true"></i>
+            <h3 class="number-item-title text-light">451</h3>
             <span class="number-item-text capitalize">happy clients</span>
         </div>
-        <div class="goal-item marg-auto">
-            <i class="icon fa fa-trophy fa-2x"></i>
-            <h3 class="number-item-title">15</h3>
+        <div class="goal-item col-md col-sm-6 col-6">
+            <i class="icon fa fa-trophy fa-2x" aria-hidden="true"></i>
+            <h3 class="number-item-title text-light">15</h3>
             <span class="number-item-text">awards won</span>
         </div>
-        <div class="goal-item marg-auto">
-            <i class="fas fa-star fa-2x"></i>      
-                  <h3 class="number-item-title">4.8</h3>
+        <div class="goal-item col-md col-sm-6 col-6">
+            <i class="fas fa-star fa-2x" aria-hidden="true"></i>      
+                  <h3 class="number-item-title text-light">4.8</h3>
             <span class="number-item-text">rate</span>
         </div>
-        <div class="goal-item marg-auto">
-            <i class="icon fa fa-file fa-2x"></i>
-            <h3 class="number-item-title">45</h3>   
+        <div class="goal-item col-md col-sm-6 col-6">
+            <i class="icon fa fa-file fa-2x" aria-hidden="true"></i>
+            <h3 class="number-item-title text-light">45</h3>   
             <span class="number-item-text">project completed </span>
         </div>
     </div>
@@ -298,7 +370,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 <!-- *************************end achievement section ***********************************-->
 
 <!-- *************************start prices section ***************************************-->
-<section class="prices">
+<section class="prices ">
     <div class=" prices-head feat-head marg-b-30">
         <h3 class="prices-title feat-title ">
             pricing table
@@ -306,60 +378,60 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
         <span class="line"></span>
         
     </div>
-    <div class="container display-flex marg-auto">
-        <div class="price-flex display-flex marg-auto">
-        <div class="price-item tb-effect">
-            <span class="pr-title">basic plane</span>
-            <div class="cost border-radius-50-percent">
-                <h2 class="num-cost ">
-                    $9
-                </h2>
-                <p class="d-cost">/mounth</p>
-            </div>
-            <div class="pr-dec">
-                1 Gb disk space<br>
-                100 email account<br>
-                24/24 support
-            </div>
-            <button class="price-btn border-radius-50-px">buy now</button>
-        </div>
-        <div class="price-item tb-effect">
-            <span class="pr-title">specail plane</span>
-            <div class="cost border-radius-50-percent">
-                <h2 class="num-cost">
-                    $29
-                </h2>
-                <p class="d-cost">/mounth</p>
-            </div>
-            <div class="pr-dec">
-                1 Gb disk space<br>
-                100 email account<br>
-                24/24 support
-            </div>
-            <button class="price-btn border-radius-50-px">buy now</button>
-        </div>
-        <div class="price-item tb-effect">
-            <span class="pr-title">specail plane</span>
-            <div class="cost border-radius-50-percent">
-                <h2 class="num-cost">
-                    $50
-                </h2>
-                <p class="d-cost">/mounth</p>
-            </div>
-            <div class="pr-dec">
-                1 Gb disk space<br>
-                100 email account<br>
-                24/24 support
-            </div>
-            <button class="price-btn border-radius-50-px">buy now</button>
-        </div>
+    <div class="container-lg container-md-fluid mt-5">
+      <div class="row justify-content-around ">
+        <div class="price-item tb-effect mb-4 col-lg-3 col-md-5 col-10">
+          <span class="pr-title">basic plane</span>
+          <div class="cost border-radius-50-percent">
+              <h2 class="num-cost ">
+                  $9
+              </h2>
+              <p class="d-cost">/mounth</p>
+          </div>
+          <div class="pr-dec">
+              1 Gb disk space<br>
+              100 email account<br>
+              24/24 support
+          </div>
+          <button class="price-btn border-radius-50-px">buy now</button>
+      </div>
+      <div class="price-item tb-effect mb-4 col-lg-3 col-md-5 col-10">
+          <span class="pr-title">specail plane</span>
+          <div class="cost border-radius-50-percent">
+              <h2 class="num-cost">
+                  $29
+              </h2>
+              <p class="d-cost">/mounth</p>
+          </div>
+          <div class="pr-dec">
+              1 Gb disk space<br>
+              100 email account<br>
+              24/24 support
+          </div>
+          <button class="price-btn border-radius-50-px">buy now</button>
+      </div>
+      <div class="price-item tb-effect col-lg-3 col-md-6 col-10">
+          <span class="pr-title">specail plane</span>
+          <div class="cost border-radius-50-percent">
+              <h2 class="num-cost">
+                  $50
+              </h2>
+              <p class="d-cost">/mounth</p>
+          </div>
+          <div class="pr-dec">
+              1 Gb disk space<br>
+              100 email account<br>
+              24/24 support
+          </div>
+          <button class="price-btn border-radius-50-px">buy now</button>
+      </div>
+      </div>
     </div>
-</div>
 </section>
 <!-- ************************ end prices section ***************************************-->
 
 <!-- *********************** start our team section ************************************-->
-<section class="our-team pdy" >
+<section id="team" class="our-team py-5 my-5 bg-light" >
     <div class=" team-head feat-head marg-b-30">
         <h3 class="team-title feat-title">
             our team
@@ -367,15 +439,15 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
         <span class="line"></span>
         
     </div>
-    <div class="container display-flex marg-auto">
-        <div class="team-parent display-flex ">
-            <div class="member tb-effect border-radius-20-px">
-                <div class="team-img marg-auto">
+    <div class="container-lg container-md-fluid ">
+        <div class="team-parent row justify-content-around ">
+            <div class="member tb-effect border-radius-20-px mb-4 col-lg-3 col-md-5 col-9">
+                <div class="team-img">
                 <img src="images/team/team1.webp" alt="team member">
                 <div class="overlay-img">
-               <a  href="#" class="border-radius-50-percent display-flex "> <i class="fab fa-facebook"></i> </a>
-               <a  href="#" class="border-radius-50-percent display-flex "> <i class="fab fa-twitter"></i></a>
-                <a  href="#" class="border-radius-50-percent display-flex "><i class="fab fa-linkedin"></i></a>
+               <a  href="#" class="border-radius-50-percent "> <i class="fab fa-facebook"></i> </a>
+               <a  href="#" class="border-radius-50-percent "> <i class="fab fa-twitter"></i></a>
+                <a  href="#" class="border-radius-50-percent "><i class="fab fa-linkedin"></i></a>
             </div>
             </div>
                 <p class="team-info-title">mark</p>
@@ -383,13 +455,13 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
             </div>
 
 
-            <div class="member mg tb-effect border-radius-20-px">
-                <div class="team-img marg-auto">
+            <div class="member tb-effect border-radius-20-px mb-4 col-lg-3 col-md-5 col-9">
+              <div class="team-img">
                 <img src="images/team/team2.webp" alt="team member">
                 <div class="overlay-img">
-                    <a  href="#" class="border-radius-50-percent display-flex "> <i class="fab fa-facebook"></i> </a>
-                    <a  href="#" class="border-radius-50-percent display-flex "> <i class="fab fa-twitter"></i></a>
-                     <a  href="#" class="border-radius-50-percent display-flex "><i class="fab fa-linkedin"></i></a>
+                    <a  href="#" class="border-radius-50-percent "> <i class="fab fa-facebook"></i> </a>
+                    <a  href="#" class="border-radius-50-percent "> <i class="fab fa-twitter"></i></a>
+                     <a  href="#" class="border-radius-50-percent "><i class="fab fa-linkedin"></i></a>
             </div>
             </div>
                 <p class="team-info-title">tomas</p>
@@ -398,13 +470,13 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 
 
 
-            <div class="member tb-effect border-radius-20-px">
-                <div class="team-img marg-auto">
+            <div class="member tb-effect border-radius-20-px col-lg-3 col-md-6 col-9">
+              <div class="team-img">
                 <img src="images/team/team3.webp" alt="team member">
                 <div class="overlay-img">
-                    <a  href="#" class="border-radius-50-percent display-flex "> <i class="fab fa-facebook"></i> </a>
-                    <a  href="#" class="border-radius-50-percent display-flex "> <i class="fab fa-twitter"></i></a>
-                     <a  href="#" class="border-radius-50-percent display-flex "><i class="fab fa-linkedin"></i></a>
+                    <a  href="#" class="border-radius-50-percent "> <i class="fab fa-facebook"></i> </a>
+                    <a  href="#" class="border-radius-50-percent "> <i class="fab fa-twitter"></i></a>
+                     <a  href="#" class="border-radius-50-percent "><i class="fab fa-linkedin"></i></a>
             </div>
             </div>
                 <p class="team-info-title">jone</p>
@@ -417,7 +489,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 <!-- ************************ end our team section *************************************-->
 
 <!-- *********************** start news section ************************************-->
-<section class="news pdy">
+<section class="news py-5">
     <div class=" news-head feat-head marg-b-30">
         <h3 class="news-title feat-title">
             recent news
@@ -425,11 +497,11 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
         <span class="line"></span>
         
     </div>
-    <div class="container marg-auto">
-        <div class="news-flex display-flex">
+    <div class="container-lg container-md-fluid">
+        <div class="news-flex row justify-content-around">
 
 
-        <div class="news-item  ">
+        <div class="news-item  mb-4 col-lg-3 col-md-5 col-9">
            <img src="images/blog/blog1.webp" alt="" class="news-img">
            <ul class="display-inline-flex">
                <li> <i class="fa fa-user padding-10px"></i> jone </li>
@@ -441,7 +513,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
         <span class="read-more padding-10px">read more</span>
                 </div>
 
-        <div class="news-item marg ">
+        <div class="news-item  mb-4 col-lg-3 col-md-5 col-9">
             <img src="images/blog/blog2.webp" alt="" class="news-img">
             <ul class="display-inline-flex">
                 <li> <i class="fa fa-user padding-10px"></i> jone </li>
@@ -454,7 +526,7 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
                 </div>
 
 
-         <div class="news-item ">
+         <div class="news-item col-lg-3 col-md-6 col-9">
             <img src="images/blog/blog3.webp" alt="" class="news-img">
             <ul class="display-inline-flex">
                 <li> <i class="fa fa-user padding-10px"></i> jone </li>
@@ -472,30 +544,91 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
 <!-- ************************ end news section *************************************-->
 
 <!-- *********************** start contact section **********************************-->
-<section class="contact-us pdy">
+<section id="contact" class="contact-us py-5 bg-light">
    
-    <div class="container marg-auto">
-        <div class="comtact-flex display-flex marg-auto">
-            <div class="form">
-                <form action="/action_page.php">
-                <label for="name">name.</label><br>
-                <input type="text"  id="name" name="name" value="" ><br>
-                <label for="email">email:</label><br>
-                <input type="email"  id="email" name="name" value="" required ><br>
-                <label for="phone">number:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
-                <textarea class="border-radius-10px" rows="5" id="message" name="message " spellcheck="true">
-                </textarea><br>
-               <button class="border-radius-10-px">send</button>
-            </form>
-            </div>
+    <div class="container-lg container-md-fluid">
 
-            <div class="map">
+        <div class="comtact-flex row justify-content-around">
+    
+
+            <form class="row  col-md-5 col-10 mb-md-0 mb-5 was-validated">
+              <div class="col-md-6 text-left">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4 " placeholder="ex@gmail" required>
+                <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Such: Mahmoud" required>
+                  <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St" required>
+                  <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity" required>
+                  <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select" aria-placeholder="Choose...">
+                  <option selected>cairo</option>
+                  <option>ismailia</option>
+                  <option>suez</option>
+                  <option>port said</option>
+                  <option>alex</option>
+                </select>
+              </div>
+
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip" required>
+                  <div class="valid-feedback">Valid.</div>
+            
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                    <div class="valid-feedback">Valid.</div>
+                    
+                </div>
+              </div>
+
+              <div class="col-4">
+                <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
+              </div>
+            </form>
+        
+          
+
+            <div class="map col-md-5 col-10 ">
                 <div class=" contact-head feat-head marg-b-5">
                     <h3 class="contact-title feat-title">
                         contact us
                     </h3>
-                    <span class="line"></span>
+                    <span class="line "></span>
                     
                 </div>
                 <p class="contact-dec">You can read a little more about us here, so please feel free to contact us directly if you have any questions.</p>
@@ -520,9 +653,9 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
                 </tr>
                 <tr>
                  <p  class="contact-inf">
-                        <a href="#" ><i class="fab fa-twitter fa-2x border-radius-50-percent" ></i>  </a>
-                        <a href="#"><i class="fab fa-facebook fa-2x border-radius-50-percent" ></i> </a>
-                         <a href="#" ><i class="fab fa-linkedin fa-2x border-radius-50-percent" ></i></a>
+                        <a href="#" ><i class="fab fa-twitter fa-2x " ></i>  </a>
+                        <a href="#"><i class="fab fa-facebook fa-2x " ></i> </a>
+                         <a href="#" ><i class="fab fa-linkedin fa-2x " ></i></a>
                  </p>
                 </tr>
             </tbody>
@@ -533,22 +666,84 @@ No more exaggerated budgets or random targets, we're working on well-studied dig
     <!-- ******************* end contact section *************************************-->
 
 <!-- *********************** start footer section **********************************-->
-   <footer class="display-flex">
-       <div class="footer-logo ">
-           <img src="images/logo.png" alt="logo" >
-       </div>
-      
-        <ul class="footer-links display-inline-flex ">
-            <li><a href="#" class="padding-10px"><i class="fa fa-facebook fa-2x border-radius-20-px"></i></a></li>
-            <li><a href="#" class="padding-10px"><i class="fa fa-twitter fa-2x border-radius-20-px"></i></a></li>
-            <li><a href="#" class="padding-10px"><i class="fa fa-youtube fa-2x border-radius-20-px"></i></a></li>
-            <li><a href="#" class="padding-10px"><i class="fa fa-linkedin fa-2x border-radius-20-px"></i></a></li>
-            <li><a href="#" class="padding-10px"><i class="fa fa-google-plus fa-2x border-radius-20-px"></i></a></li>
-        </ul>
-      <p class="copy">all copyright &COPY; 2021 reserved to <span class="capitalize">mahmoud muhammed </span>  </p>
-   </footer>
-    <!-- ******************* end footer section *************************************-->
+<footer >
+    <div class="container-lg container-md-fluid">
+        <div class="row justify-content-around align-items-baseline">
+        <div class="footer-logo col-lg-4 col-md-10 col-12">
+            <div class="logo-img">
+                <img src="images/logo-wihte.png" alt="logo">
 
+            </div>
+            <div class="logo-desc">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    LoremIpsum has been the industry's standard dummy text ever since the 1500s, 
+                    Lorem Ipsum is simply dumm
+                </p>
+            </div>
+           
+            <div class="download">
+                <img src="images/footer/cms-footer-1.png" alt="apple-store">
+                <img src="images/footer/cms-footer-2.png" alt="google-play">
+            </div>
+        </div>
+        <div class="info col-lg-2 col-md-10 col-12">
+           
+         <li>  <a href="#" class="list-header">information</a></li> 
+            <input type="checkbox" id="menu">
+            <label for="menu"><i class="fas fa-chevron-down"></i></label>
+            <ul class="info-list">
+                <li><a href="#">about us</a></li>
+                <li><a href="#">delivery information</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">terms & conditions</a></li>
+                <li><a href="#">site map</a></li>
+            </ul>
+            
+        </div>
+        <div class="my-account col-lg-2 col-md-10 col-12">
+          <li> <a href="#" class="list-header">my account</a></li> 
+            <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-chevron-down"></i></label>
+                
+            <ul class="account-list">
+                <li><a href="#">my account</a></li>
+                <li><a href="#">order history</a></li>
+                <li><a href="#">wish list</a></li>
+                <li><a href="#">news letter</a></li>
+                <li><a href="#">returns</a></li>
+            </ul>
+        </div>
+        <div class="subscribe col-lg-4 col-md-10 col-12">
+            <a href="#">subscribe now</a>
+            <div class="email-input">
+                <input  type="search" placeholder="Enter your email adress">
+                <div class="send-icon">
+                    <i class="far fa-paper-plane send"></i>
+                </div>
+            </div>
+                
+            <div class="socail-media">
+
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    <div class="copy-right">
+        <span>all &copy; copy-right reserved to Mahmoud muhammed </span>
+    </div>
+</div>
+</footer>
+    <!-- ******************* end footer section *************************************-->
+    <!-- bootstrap js and proper files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
 

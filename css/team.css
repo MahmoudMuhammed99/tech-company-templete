@@ -2,19 +2,16 @@
    ****************************3.6 team section ******************************************************* */
    .team-parent{
     margin-top: 40px;
-
+   
 }
 .member{
     padding: 40px 10px;
     background-color: rgb(230, 225, 225);
     text-align: center;
-    width: 30%;
 position: relative;
 }
 
-.member.mg{
-    margin: 0 20px 0 20px;
-}
+
 .member .team-info-title{
     color: var(--black-color);
     font-size: 3rem;
